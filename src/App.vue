@@ -1,14 +1,20 @@
 <script>
 import { defineComponent } from "vue";
 
+import logisticMain from "./components/pages/main/logistic-main.vue";
+
 export default defineComponent({
-  name: "App"
+  name: "App",
+
+  components: {
+    logisticMain
+  }
 })
 </script>
 
 <template>
   <div class="mainContainer">
-
+    <logistic-main />
   </div>
 </template>
 
