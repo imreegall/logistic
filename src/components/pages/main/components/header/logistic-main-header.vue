@@ -26,18 +26,16 @@ export default defineComponent({
   font-size: 30px
   color: black
 
-  @media (min-width: $largeResolutionStart)
-    padding: 25px
-
   @media (max-width: $mediumResolutionEnd)
     display: flex
     gap: 25px
-    align-items: baseline
-    padding: 16px 30px 25px 10px
 
   .burger
     @media (min-width: $largeResolutionStart)
       display: none
+
+    @media (max-width: $mediumResolutionEnd)
+      margin-top: 9px
 
   > .title
     flex: 1
